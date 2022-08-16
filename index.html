@@ -10,7 +10,7 @@
         const micropip = pyodide.pyimport("micropip");
         await micropip.install("texttable");
 
-        await pyodide.loadPackage("https://github.com/flange-ipb/igraph-wasm-wheel/raw/main/igraph-develop-7f028d6-231bb65-cp310-cp310-emscripten_3_1_14_wasm32.whl");
+        await pyodide.loadPackage("https://flange-ipb.github.io/igraph-wasm-wheel/igraph-develop-7f028d6-231bb65-cp310-cp310-emscripten_3_1_14_wasm32.whl");
         console.log("Pyodide is ready!");
         return pyodide;
       }
